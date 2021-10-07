@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+header{
+    background: #f6f9f9;
+    padding: 10px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+    margin-left: 50px;
+    
+}
+.banner{
+    position: relative;
+    background-image: url(../images/banner.png);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}  
+.height{
+    min-height: 93vh;
+    align-items: center;
+}
+.banner h1{
+    color: white;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.banner span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #15a4fa;
+
+}
+.banner p{
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    margin: 20px 0px;
+
+
+}
+.btn-call{
+    padding: 0;
+    border: 1px solid #15a4fa;
+    padding: 10px 30px;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+.btn-call:hover{
+    color: #ffff;
+    background: #15a4fa;
+
+}
+.icon{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+
+    }
+    100%{        
+        top: 85%;
+    }
+}
+.simple{   
+    padding: 100px 0px 100px 0px;
+    background: #f6f9f9;
+}
+.simple h1{
+    color: #2d3950;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.simple p{
+    color: #999999;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.feature{
+    padding: 50px 0px 100px 0px;
+    text-align: center;
+}
+.feature h2{
+    text-transform: capitalize;
+    margin: 20px 0px;
+    font-size: 24px;
+
+}
+.feature p{
+    text-transform: capitalize;
+    margin: 20px 0px;
+    font-size: 17px;
+
+}
+.feature_icon{
+    height: 100px;
+    width: 100px;
+    margin: auto;   
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #48baff 50%, #48baff 51%, #207cca 51%, #5fc3ff 51%, #5fc3ff 51%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #48baff 50%,#48baff 51%,#207cca 51%,#5fc3ff 51%,#5fc3ff 51%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #48baff 50%,#48baff 51%,#207cca 51%,#5fc3ff 51%,#5fc3ff 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    border-radius: 7px;
+}
+.showcase{
+    text-align: center;
+    background-color: #f6f9f9;
+    padding: 50px 0px 100px 0px;
+}
+.showcase h2{
+    text-transform: capitalize;
+    font-size: 40px ;
+    color: #2d3950;
+    font-weight: 400;
+}
+.showcase p{
+    color: #999999;
+    font-size: 20px;
+}
+.items{
+    position: relative;
+    margin: 15px 0;
+}
+.items img{
+    width: 100%;
+}
+.items::before{
+    content: '';
+    position: absolute;
+    height: 0%;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    background-color: #48baff;
+    transition: .4s all ease-in-out;
+    transform: translate(-50%, -50%);
+    opacity: .7;
+    
+}
+.items:hover::before{
+    height: 100%;
+    
+}
+.items-info{
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s all ease-in-out;
+}
+.items-info ul{
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+.items-info ul li{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 0 15px;
+    margin-left: 5px;
+}
+.items-info ul li a{
+    color: #fff;
+}
+.items:hover .items-info{
+    opacity: 1;
+    top: 50%;
+}
+.contact-section{
+    background-image: url(../images/footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+.contact-section::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: #2d3950;
+   opacity: .9;
+   z-index: -1;
+}
+.contact-section form{ 
+}
+.contact-section form input{ 
+    background: transparent;
+    border: none;
+    border: 2px solid #999999;
+    color: #999999;
+
+}
+.contact-section form textarea{
+    background: transparent;
+    border: none;
+    border: 2px solid #999999;
+    color: #999999;
+}
+.check{
+    margin-top: 10px;
+
+}
+.check p{
+    color: #fff !important;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-left: 10px;
+    
+
+}
+.submit{
+    border: none !important;
+    border: 1px solid #48baff !important;
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 2px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.submit:hover{
+    background-color: #15a4fa;
+    color: black;
+}
+.contact-section h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 40px;
+
+}
+.contact-section p{
+    color: #999999;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.footer{
+}
+.footer-info{
+    display: flex;  
+    justify-content: space-between;   
+    margin-top: 9px;
+    
+}
+.footer-info p{
+
+color: #999999;
+
+}
+.footer-info ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+    width: 55%;
+}
+.footer-info ul li{
+    background: #15a4fa;
+    color: #ffffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+}
+.footer-info ul li i{
+    color: #fff;
+}
+.footer-icon ul li:hover{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+  
